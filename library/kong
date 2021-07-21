@@ -2,47 +2,38 @@ Maintainers: Kong Docker Maintainers <support@konghq.com> (@thekonginc)
 GitRepo: https://github.com/Kong/docker-kong.git
 # needs "Constraints" to match "centos" (which this image is "FROM")
 
-Tags: 1.3.0rc1-alpine, 1.3.0rc1, 1.3rc1
-GitCommit: 289821cd95a938be2abe72508c1cea624e9651c7
-GitFetch: refs/tags/1.3.0rc1
+Tags: 2.5.0-alpine, 2.5.0, 2.5, alpine, latest
+GitCommit: ff3efa2c53e785e655a9c7de24c8111a373900cb
+GitFetch: refs/tags/2.5.0
 Directory: alpine
+Architectures: amd64
 
-Tags: 1.3.0rc1-centos, 1.3rc1-centos
-GitCommit: 289821cd95a938be2abe72508c1cea624e9651c7
-GitFetch: refs/tags/1.3.0rc1
-Constraints: !aufs
+Tags: 2.5.0-ubuntu, 2.5-ubuntu, ubuntu
+GitCommit: ff3efa2c53e785e655a9c7de24c8111a373900cb
+GitFetch: refs/tags/2.5.0
+Directory: ubuntu
+Architectures: amd64, arm64v8
+
+Tags: 2.5.0-centos, 2.5-centos, centos
+GitCommit: ff3efa2c53e785e655a9c7de24c8111a373900cb
+GitFetch: refs/tags/2.5.0
 Directory: centos
+Architectures: amd64
 
-Tags: 1.2.1-alpine, 1.2.1, 1.2, latest
-GitCommit: 43b86e0b483f8312d32450f9adc8bf3c60a8e2e8
-GitFetch: refs/tags/1.2.1
+Tags: 2.4.1-alpine, 2.4-alpine, 2.4.1, 2.4
+GitCommit: e1b0a6c7eddd327926027692863a9900fd856977
+GitFetch: refs/tags/2.4.1
 Directory: alpine
+Architectures: amd64, arm64v8
 
-Tags: 1.2.1-centos, 1.2-centos
-GitCommit: 43b86e0b483f8312d32450f9adc8bf3c60a8e2e8
-GitFetch: refs/tags/1.2.1
-Constraints: !aufs
+Tags: 2.4.1-ubuntu, 2.4-ubuntu
+GitCommit: e1b0a6c7eddd327926027692863a9900fd856977
+GitFetch: refs/tags/2.4.1
+Directory: ubuntu
+Architectures: amd64, arm64v8
+
+Tags: 2.4.1-centos, 2.4-centos
+GitCommit: e1b0a6c7eddd327926027692863a9900fd856977
+GitFetch: refs/tags/2.4.1
 Directory: centos
-
-Tags: 1.1.2-alpine, 1.1.2, 1.1
-GitCommit: 32cce9650f1877b85a71b33595bd4eb45134e50f
-GitFetch: refs/tags/1.1.2
-Directory: alpine
-
-Tags: 1.1.2-centos, 1.1-centos
-GitCommit: 32cce9650f1877b85a71b33595bd4eb45134e50f
-GitFetch: refs/tags/1.1.2
-Constraints: !aufs
-Directory: centos
-
-Tags: 1.0.3-alpine, 1.0.3, 1.0
-GitCommit: 5605ef3e52111bb4edfa48def7aee19ada9bf8fb
-GitFetch: refs/tags/1.0.3
-Directory: alpine
-
-Tags: 1.0.3-centos, 1.0-centos
-GitCommit: 5605ef3e52111bb4edfa48def7aee19ada9bf8fb
-GitFetch: refs/tags/1.0.3
-Constraints: !aufs
-Directory: centos
-
+Architectures: amd64

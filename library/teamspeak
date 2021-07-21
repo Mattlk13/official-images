@@ -1,7 +1,6 @@
-Maintainers: Niels Werensteijn <niels.werensteijn@teamspeak.com> (@nwerensteijn),
-             Maximilian Münchow <maximilian.muenchow@teamspeak.com> (@muenchow)
+Maintainers: Niels Werensteijn <niels.werensteijn@teamspeak.com> (@nwerensteijn)
 GitRepo: https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images
 
-Tags: 3.9, 3.9.1, latest
-GitCommit: ef39847a374333c5de84d4cb730bbbc99dd9f18b
+Tags: 3.13, 3.13.6, latest
+GitCommit: ab76b77f97ba4c150126aaa6a045d3c7f8265ae9
 Directory: alpine

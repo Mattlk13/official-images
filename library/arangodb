@@ -1,12 +1,10 @@
-# maintainer: Frank Celler <info@arangodb.com> (@fceller)
-# maintainer: Wilfried Goesgens <w.goesgens@arangodb.org> (@dothebart)
+Maintainers: Frank Celler <info@arangodb.com> (@fceller), Wilfried Goesgens <w.goesgens@arangodb.org> (@dothebart), Vadim Kondratyev <vadim@arangodb.org> (@KVS85)
+GitRepo: https://github.com/arangodb/arangodb-docker
 
-2.8: https://github.com/arangodb/arangodb-docker@d6fca9a137cd21345b1d380fc0e72daacb6130ce jessie/2.8.11
-2.8.11: https://github.com/arangodb/arangodb-docker@d6fca9a137cd21345b1d380fc0e72daacb6130ce jessie/2.8.11
-3.2: https://github.com/arangodb/arangodb-docker@b4c22ad8bf4facbbc7c3b24e985251a09fcdbcec stretch/3.2.17
-3.2.17: https://github.com/arangodb/arangodb-docker@b4c22ad8bf4facbbc7c3b24e985251a09fcdbcec stretch/3.2.17
-3.3: https://github.com/arangodb/arangodb-docker@24db8fa0429ce6fa1f7d56e54c9bb3da51c32b3e stretch/3.3.23
-3.3.23: https://github.com/arangodb/arangodb-docker@24db8fa0429ce6fa1f7d56e54c9bb3da51c32b3e stretch/3.3.23
-3.4: https://github.com/arangodb/arangodb-docker@930d315e04b231549a86f127ca9d2462eeaf2ebb alpine/3.4.7
-3.4.7: https://github.com/arangodb/arangodb-docker@930d315e04b231549a86f127ca9d2462eeaf2ebb alpine/3.4.7
-latest: https://github.com/arangodb/arangodb-docker@930d315e04b231549a86f127ca9d2462eeaf2ebb alpine/3.4.7
+Tags: 3.6, 3.6.15
+GitCommit: f35358dc627333ca0349e1c8e5af7ea1780ed3aa
+Directory: alpine/3.6.15
+
+Tags: 3.7, 3.7.12, latest
+GitCommit: da569961c6a136675562b066aa542d4a8e05c8cf
+Directory: alpine/3.7.12

@@ -74,8 +74,7 @@ declare -A allNaughty=(
 	#[img:tag]=1
 )
 
-tags="$(bashbrew list --uniq "$@" | sort -u)"
-naughtyCount=0
+tags="$(bashbrew --namespace '' list --uniq "$@" | sort -u)"
 for img in $tags; do
 	arches="$(_arches "$img")"
 	constraints="$(bashbrew cat --format '{{ .TagEntry.Constraints | join "\n" }}' "$img" | sort -u)"
@@ -84,40 +83,22 @@ for img in $tags; do
 	for BASHBREW_ARCH in $arches; do
 		export BASHBREW_ARCH
 
-		if ! froms="$(_froms "$img" 2>/dev/null)"; then
-			# if we can't fetch the tags from their real locations, let's try the warehouse
-			refsList="$(
-				bashbrew list --uniq "$img" \
-				| sed \
-					-e 's!:!/!' \
-					-e "s!^!refs/tags/$BASHBREW_ARCH/!" \
-					-e 's!$!:!'
-			)"
-			[ -n "$refsList" ]
-			git -C "$BASHBREW_CACHE/git" \
-				fetch --no-tags --quiet \
-				https://github.com/docker-library/commit-warehouse.git \
-				$refsList
-			froms="$(_froms "$img")"
-		fi
-
+		froms="$(_froms "$img")"
 		[ -n "$froms" ] # rough sanity check
 
+		allExpected=
 		for from in $froms; do
-			expected="$(_expected_constraints "$from" | sort -u)"
-			missing="$(comm -13 <(echo "$constraints") <(echo "$expected"))"
-			if [ -n "$missing" ]; then
-				imgMissing[$from]+=$'\n'"$missing"
-			fi
-			extra="$(comm -23 <(echo "$constraints") <(echo "$expected"))"
-			if [ "$from" = 'scratch' ]; then
-				# if a given image is "FROM scratch", then consider "!aufs" an acceptable constraint that doesn't show
-				extra="$(grep -vE '^!aufs$' <<<"$extra" || :)"
-			fi
-			if [ -n "$extra" ]; then
-				imgExtra[$from]+=$'\n'"$extra"
-			fi
+			expected="$(_expected_constraints "$from")"
+			allExpected="$(sort -u <<<"$allExpected"$'\n'"$expected")"
 		done
+		missing="$(comm -13 <(echo "$constraints") <(echo "$allExpected"))"
+		if [ -n "$missing" ]; then
+			imgMissing[$from]+=$'\n'"$missing"
+		fi
+		extra="$(comm -23 <(echo "$constraints") <(echo "$allExpected"))"
+		if [ -n "$extra" ]; then
+			imgExtra[$from]+=$'\n'"$extra"
+		fi
 	done
 	if [ "${#imgMissing[@]}" -gt 0 ]; then
 		for from in $(IFS=$'\n'; sort -u <<<"${!imgMissing[*]}"); do
@@ -125,7 +106,6 @@ for img in $tags; do
 			missing="$(sed '/^$/d' <<<"$missing" | sort -u)"
 			echo " - $img -- missing constraints (FROM $from):"
 			sed 's/^/   - /' <<<"$missing"
-			(( naughtyCount++ )) || :
 		done
 	fi
 	if [ "${#imgExtra[@]}" -gt 0 ]; then
@@ -134,9 +114,6 @@ for img in $tags; do
 			extra="$(sed '/^$/d' <<<"$extra" | sort -u)"
 			echo " - $img -- extra constraints (FROM $from):"
 			sed 's/^/   - /' <<<"$extra"
-			(( naughtyCount++ )) || :
 		done
 	fi
 done
-
-exit "$naughtyCount"

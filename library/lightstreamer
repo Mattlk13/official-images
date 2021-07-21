@@ -11,13 +11,33 @@ Architectures: amd64
 GitCommit: eeab1ae534273b1b05c973e577a1f3eec8d58427
 Directory: 6.1
 
-Tags: 7.0.3-jdk8-openjdk, 7.0-jdk8-openjdk, 7-jdk8-openjdk, 7.0.3-jdk8, 7.0-jdk8, 7-jdk8
+Tags: 7.0.3-jdk8-openjdk, 7.0-jdk8-openjdk, 7.0.3-jdk8, 7.0-jdk8
 Architectures: amd64
-GitCommit: 4ffe8753677fe6d6fea3c0e8cdc44383b278a0b7
+GitCommit: f3aaece15133b9405aef20c5d378c5a83aba7585
 Directory: 7.0/jdk8
 
-Tags: 7.0.3-jdk11-openjdk, 7.0-jdk11-openjdk, 7-jdk11-openjdk, 7.0.3-jdk11, 7.0-jdk11, 7-jdk11, 7.0.3, 7.0, 7, latest
+Tags: 7.0.3-jdk11-openjdk, 7.0-jdk11-openjdk, 7.0.3-jdk11, 7.0-jdk11, 7.0.3, 7.0
 Architectures: amd64, arm64v8
-GitCommit: 3efee7177cc5213bf17ad12ff1ba518f5b58c1f0
+GitCommit: f3aaece15133b9405aef20c5d378c5a83aba7585
 Directory: 7.0/jdk11
+
+Tags: 7.1.2-jdk8-openjdk, 7.1-jdk8-openjdk, 7.1.2-jdk8, 7.1-jdk8
+Architectures: amd64
+GitCommit: 7bdd2632e1cae0bf838899d591aadb2dd128c41a
+Directory: 7.1/jdk8
+
+Tags: 7.1.2-jdk11-openjdk, 7.1-jdk11-openjdk, 7.1.2-jdk11, 7.1-jdk11, 7.1.2, 7.1
+Architectures: amd64, arm64v8
+GitCommit: 7bdd2632e1cae0bf838899d591aadb2dd128c41a
+Directory: 7.1/jdk11
+
+Tags: 7.2.0-jdk11-openjdk, 7.2-jdk11-openjdk, 7-jdk11-openjdk, 7.2.0-jdk11, 7.2-jdk11, 7-jdk11, 7.2.0, 7.2, latest
+Architectures: amd64, arm64v8
+GitCommit: 9b286d6ad71126b2848b76a56d75f1e7cfb8d4ab
+Directory: 7.2/jdk11
+
+Tags: 7.2.0-jdk8-openjdk, 7.2-jd8-openjdk, 7-jdk8-openjdk, 7.2.0-jdk9, 7.2-jdk8, 7-jdk8
+Architectures: amd64, arm64v8
+GitCommit: 9b286d6ad71126b2848b76a56d75f1e7cfb8d4ab
+Directory: 7.2/jdk8
 

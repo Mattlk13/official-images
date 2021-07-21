@@ -1,15 +1,7 @@
 Maintainers: Nicolas Albert <nicolasa@convertigo.com> (@nicolas-albert), Olivier Picciotto <olivier.picciotto@convertigo.com> (@opicciotto)
 GitRepo: https://github.com/convertigo/convertigo
-GitCommit: 82d7e88c36c13c75bc59db398d2bc058bfa6d875
+GitCommit: 7185ee1291019589b25abe0957f431be65c1855b
 
-Tags: 7.6.1, 7.6, latest
+Tags: 7.9.4, 7.9, latest
 Architectures: amd64
 Directory: docker/default
-
-Tags: 7.6.1-slim, 7.6-slim, slim
-Architectures: amd64
-Directory: docker/slim
-
-Tags: 7.6.1-openj9, 7.6-openj9, openj9
-Architectures: amd64
-Directory: docker/openj9

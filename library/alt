@@ -3,12 +3,11 @@ Maintainers: ALT Linux Team Cloud <alt-cloud@altlinux.org> (@alt-cloud),
              Gleb Fotengauer-Malinovskiy <glebfm@altlinux.org> (@glebfm),
              Mikhail Gordeev <obirvalger@altlunux.org> (@obirvalger)
 GitRepo: https://github.com/alt-cloud/docker-brew-alt.git
-Constraints: !aufs
 
 Tags: p9, latest
 Architectures: amd64, i386, arm64v8, ppc64le
 GitFetch: refs/heads/p9
-GitCommit: 9f4e4ef359c3b555458af34084e3d7236dc001e8
+GitCommit: 027b02f57faf6278ab0a7080e077f4e989e0302d
 amd64-Directory: x86_64/
 i386-Directory: i586/
 arm64v8-Directory: aarch64/
@@ -17,14 +16,14 @@ ppc64le-Directory: ppc64le/
 Tags: p8
 Architectures: amd64, i386
 GitFetch: refs/heads/p8
-GitCommit: cb59c4c01e5791db758805ab64a6522d790dedd4
+GitCommit: ce87cc6c704caf13461955cfa5ddd83a7d04207a
 amd64-Directory: x86_64/
 i386-Directory: i586/
 
 Tags: sisyphus
 Architectures: amd64, i386, arm64v8, ppc64le
 GitFetch: refs/heads/sisyphus
-GitCommit: 9b79e4b2426ae41d188e838c511eb1097aef21f9
+GitCommit: 425b1b723bf933037319e23d5a5cdf7e796971eb
 amd64-Directory: x86_64/
 arm64v8-Directory: aarch64/
 i386-Directory: i586/

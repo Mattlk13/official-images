@@ -1,45 +1,45 @@
-# this file is generated via https://github.com/docker-library/rabbitmq/blob/0576eabd93cf3ea348b7abec1e73056af1e47f88/generate-stackbrew-library.sh
+# this file is generated via https://github.com/docker-library/rabbitmq/blob/7e63843da6bfb191ddee6dbe3dd7ec0df36ae70b/generate-stackbrew-library.sh
 
 Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon),
              Joseph Ferguson <yosifkit@gmail.com> (@yosifkit)
 GitRepo: https://github.com/docker-library/rabbitmq.git
 
-Tags: 3.8.0-beta.5, 3.8-rc
-Architectures: amd64, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: d38a86acf3433c51359bd6da62668588a4660e2b
-Directory: 3.8-rc/ubuntu
+Tags: 3.9.0-rc.2, 3.9-rc
+Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
+GitCommit: 2ebf4f0eaef98fe92592f76ab19cb2a65ec00396
+Directory: 3.9-rc/ubuntu
 
-Tags: 3.8.0-beta.5-management, 3.8-rc-management
-Architectures: amd64, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 3a5957b93e31661739a9018bc2ae5d20f1bfae59
-Directory: 3.8-rc/ubuntu/management
+Tags: 3.9.0-rc.2-management, 3.9-rc-management
+Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
+GitCommit: 0d1c84a50aa69305b2fa3e98632a206d3d2a3f9f
+Directory: 3.9-rc/ubuntu/management
 
-Tags: 3.8.0-beta.5-alpine, 3.8-rc-alpine
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: d38a86acf3433c51359bd6da62668588a4660e2b
-Directory: 3.8-rc/alpine
+Tags: 3.9.0-rc.2-alpine, 3.9-rc-alpine
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
+GitCommit: 2ebf4f0eaef98fe92592f76ab19cb2a65ec00396
+Directory: 3.9-rc/alpine
 
-Tags: 3.8.0-beta.5-management-alpine, 3.8-rc-management-alpine
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: 3a5957b93e31661739a9018bc2ae5d20f1bfae59
-Directory: 3.8-rc/alpine/management
+Tags: 3.9.0-rc.2-management-alpine, 3.9-rc-management-alpine
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
+GitCommit: 0d1c84a50aa69305b2fa3e98632a206d3d2a3f9f
+Directory: 3.9-rc/alpine/management
 
-Tags: 3.7.17, 3.7, 3, latest
-Architectures: amd64, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 22f59f67a22fa9b8ef054092c474c54ee1ef9c31
-Directory: 3.7/ubuntu
+Tags: 3.8.19, 3.8, 3, latest
+Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
+GitCommit: 67d05697020c3439aa45aaeadc9a23922a21b92c
+Directory: 3.8/ubuntu
 
-Tags: 3.7.17-management, 3.7-management, 3-management, management
-Architectures: amd64, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: f22c0b266cfeb8cb6d776f9e6a961908c2557ad3
-Directory: 3.7/ubuntu/management
+Tags: 3.8.19-management, 3.8-management, 3-management, management
+Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
+GitCommit: 0d1c84a50aa69305b2fa3e98632a206d3d2a3f9f
+Directory: 3.8/ubuntu/management
 
-Tags: 3.7.17-alpine, 3.7-alpine, 3-alpine, alpine
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: 22f59f67a22fa9b8ef054092c474c54ee1ef9c31
-Directory: 3.7/alpine
+Tags: 3.8.19-alpine, 3.8-alpine, 3-alpine, alpine
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
+GitCommit: 67d05697020c3439aa45aaeadc9a23922a21b92c
+Directory: 3.8/alpine
 
-Tags: 3.7.17-management-alpine, 3.7-management-alpine, 3-management-alpine, management-alpine
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: 4b2b11c59ee65c2a09616b163d4572559a86bb7b
-Directory: 3.7/alpine/management
+Tags: 3.8.19-management-alpine, 3.8-management-alpine, 3-management-alpine, management-alpine
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
+GitCommit: 0d1c84a50aa69305b2fa3e98632a206d3d2a3f9f
+Directory: 3.8/alpine/management
